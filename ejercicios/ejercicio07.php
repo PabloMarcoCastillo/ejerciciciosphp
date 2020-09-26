@@ -2,14 +2,14 @@
 
 <?php
 
-$array1=[4, "hola", 3.5, "peio"];
+$paises=["Eire", "España", "Francia", "Portugal"];
 
 echo "<pre>";
-var_dump($array1);
+var_dump($paises);
 echo "</pre>";
 
-foreach ($array1 as $key => $value) {
-    echo 'la clave' . $key . ' tiene el valor ' .$value . '<br>';
+foreach ($paises as $key => $value) {
+    echo $value . '<br>';
 }
 
 ?>
