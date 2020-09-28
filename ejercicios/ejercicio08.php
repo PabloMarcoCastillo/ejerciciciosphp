@@ -2,7 +2,12 @@
 
 <?php
 
-$cracks=["Messi", "Ronaldo", "Zidane", "Iniesta"];
+$cracks=[];
+$cracks[0]="Jordan";
+$cracks[1]="Magic";
+$cracks[2]="Bird";
+$cracks[3]="Lebron";
+
 
 $sobrevalorados=array("Neymar", "Morata", "Zlatan");
 
