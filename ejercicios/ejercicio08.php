@@ -2,7 +2,7 @@
 
 <?php
 
-$cracks=[];
+
 $cracks[0]="Jordan";
 $cracks[1]="Magic";
 $cracks[2]="Bird";

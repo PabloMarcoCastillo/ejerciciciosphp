@@ -5,26 +5,19 @@
 <?php
 
 $n1=0;
-$resultado=1;
-$n2=15;
-$miarray=array();
+$n2=1;
 
-for ($i=1; $i<$n;$i++){
+for ($i=0; $i<10;$i++){
 
-    $variable=$n1;
+    $resultado=$n1+$n2;
+    echo "$resultado<br>";
 
-    $n1=$resultado + $n1;
-
-    $resultado=$variable;
-
-    $array[$i]=$resultado;
-
-    for ($j=1; $j <$i ; $j++) { 
-        print($array[$j].",");
+    $n1=$n2;
+    $n2=$resultado;
     }
 
-print("<br/>");
-}
+
+
 
 ?>
 
