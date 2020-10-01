@@ -1,29 +1,28 @@
 <html>
+<head><title>Ejercicio 09</title></head>
+
+<body>
+
+<h1>Repitite el ejercicio 7 añadiendo los elementos al array de uno en uno. </h1>
 
 <?php
 
-array(5){
-     [0]=> 
-     String (16)"North of Ireland"
-     [1]=>
-     String (6)"Wales"
-     [2]=>
-     String (8)"Scotland"
-     [3]=>
-     String (7)"England"
-     [4]=>
-     String (17) "Republic of Ireland"
-}
+$countries[]='North of Ireland';
+$countries[2]='Wales';
+$countries[1]='Scotland';
+$countries[3]='England';
+$countries[]='Republic of Ireland';
+
 
 echo "<pre>";
-var_dump($paises);
+var_dump($countries);
 echo "</pre>";
 
-foreach ($paises as $key => $value) {
+foreach ($countries as $key => $value) {
     echo $value . '<br>';
 }
 
 ?>
 
-
+</body>
 </html>
