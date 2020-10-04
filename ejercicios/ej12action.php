@@ -1,7 +1,7 @@
 
 
 <?php
-if (isset($_POST["nombre"])&& $_POST["nombre"]!=" ") {
+if (isset($_POST["nombre"]) && !empty($_POST["nombre"])) {
     
     echo " Hola $_POST[nombre] ";
     

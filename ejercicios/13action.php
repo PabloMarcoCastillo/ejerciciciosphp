@@ -1,8 +1,12 @@
 <?php
 
-if (isset($_POST["nombre"]) && strln($_POST["nombre"])>3) {
-    # code...
+
+
+if (isset($_POST["nombre"]) && strlen($_POST["nombre"])>2){
+
+    echo " Hola $_POST[nombre]. Bienvenid@ ";
+
 }else {
-    # code...
+    echo "vuelve a introducir algo";
 }
 ?>

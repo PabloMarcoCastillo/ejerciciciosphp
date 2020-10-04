@@ -1,26 +1,36 @@
 <?php
 
-class Persona  
+class App
 {
-  public $nombre;
-  public $apellido;
-  public $edad;
-
-  public function __construct($nombre, $apellido, $edad)
+  public function __construct($name = "Aplicación PHP")
   {
-    $this->nombre = $nombre;
-    $this->apellido = $apellido;
-    $this->edad = $edad;
+    echo "Construyendo la app <hr>";
+    $this->name = $name;
+    $this->module = "Desarrollo Web en Entorno Servidor";
+    $this->teacher = "Rafael Cabeza";
+    $this->student = "Fulano De Tal";
   }
 
-  public function saludar()
+  public function run()
   {
-    echo "Buenos días!";
+    if(isset($_GET['method'])){
+      $method=$_GET['method'];
+
+    }else {
+      $method='index';
+    }
+    $this->$method();
   }
 
-  public function __toString()
+  public function index()
   {
-    return $this->nombre;
+    echo "Estamos en el index<br>";
+    include('/ejercicios/views/index.php');
   }
+
+  public function login()
+  {
+    echo "Estamos en el login<br>";
+    include('/ejercicios/views/login.php');
+  }  
 }
-?>
