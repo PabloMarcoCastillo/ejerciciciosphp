@@ -25,12 +25,12 @@ class App
   public function index()
   {
     echo "Estamos en el index<br>";
-    include('/ejercicios/views/index.php');
+    include('views/index.php');
   }
 
   public function login()
   {
     echo "Estamos en el login<br>";
-    include('/ejercicios/views/login.php');
+    include('views/login.php');
   }  
 }
