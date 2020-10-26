@@ -47,7 +47,6 @@ class App
     
     /*var_dump ($_POST);
     exit();*/
-
     
 
         $color=$_POST['color'];
