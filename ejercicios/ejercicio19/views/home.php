@@ -1,24 +1,11 @@
 <html>
 
 <head>
-
+<link rel="stylesheet" href="views/colores.css">
 </head>
+<body class=" <?php echo $color; ?>"> 
 
-<?php
-foreach ($color as $value) {
-    if ($value == "Azul") {
-?>
 
-        <body id="azul">
-        <?php
-    }
-    if ($value == "Rojo") {
-        ?>
-
-            <body id="rojo">
-        <?php
-    }
-} ?>
 
         <h3>Elige un color</h3>
 
@@ -28,9 +15,9 @@ foreach ($color as $value) {
                     <option>rojo</option>
                     <option>azul</option>
                 </select></p>
-
-
+                <input type="submit" value=" Enviar ">
 
         </form>
+        </body>
 
 </html>

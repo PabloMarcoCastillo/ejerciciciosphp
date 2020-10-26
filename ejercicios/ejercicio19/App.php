@@ -26,9 +26,10 @@ class App
 
     if (isset($_COOKIE['color'])) {
 
-      $color = unserialize($_COOKIE['color']);
-    } else {
-      $color = array();
+      $color = ($_COOKIE['color']);
+    } 
+    else{
+      $color="";
     }
     include('views/home.php');
   }
@@ -38,25 +39,22 @@ class App
   {
     echo "Estamos en colores<br>";
 
-    
-
-
-
     include('views/colores.css');
   }
 
-  public function cambio($color)
+  public function cambio()
   {
-    unset($_COOKIE['color']);
-    setcookie('color','',time()-1);
-    if($_POST['rojo']){
-        $color[]=$_POST['rojo'];
-        setcookie('color',serialize($color),time()+3600);
-    }else if($_POST['azul']){
-        $color[]=$_POST['azul'];
-        setcookie('color',serialize($color),time()+3600);
-    }
     
+    /*var_dump ($_POST);
+    exit();*/
+
+    
+
+        $color=$_POST['color'];
+
+        setcookie('color',$color,time()+3600);
+
+       
     header('Location: ?method=home');
   }
 }
